@@ -1,0 +1,458 @@
+html,body{
+    margin:0;
+    padding: 0;
+    background-color: #eee;
+    height:100%;
+    width: 100%;
+}
+@font-face{
+    font-family: "myfonts";
+    src: url(./fonts/RTWSYueGoTrial-Regular.otf);
+}
+body{
+    font-family:"Microsoft Ya Hei" ;
+}
+.data-reactroot{
+    width:100%;
+    height:100%;
+    overflow: auto;
+}
+.nav{
+    width: 100%;
+    height: 75px;
+    background-color: #0E0C19;
+}
+.nav a{
+    text-decoration: none;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    margin: 0;
+}
+.inernav{
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.inernav>a:nth-of-type(1){
+    font-family: "myfonts";
+    font-size: 24px;
+    color: #fff;
+    width: auto;
+    position: absolute;
+    top: 25px;
+    left: 40px;
+}
+.navLeft{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 220px;
+}
+.navLeft a,.navRight a{
+    font-size: 16px;
+    color: #fff;
+    line-height: 75px;
+}
+.navLeft>li,.navRight>li{
+    float: left;
+    height: 100%;
+}
+.navLeft>li:nth-of-type(2),.navLeft>li:nth-of-type(4){
+    margin: 0 10px;
+    display: block;
+}
+.navRight{
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 120px;
+    top: 0;
+}
+.navRight>li:nth-of-type(2){
+    margin: 0 10px;
+    display: block;
+}
+.inernav>a:nth-of-type(2){
+    float: right;
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+.inernav>a:nth-of-type(2) img{
+    width: 22px;
+}
+.spans{
+    color: #6D6221!important;
+}
+.box{
+    width: 100%;
+    height: auto;
+}
+.left{
+    width: 200px;
+    float: left;
+    margin-left: -100%;
+}
+.middle{
+    width:100%;
+    float: left;
+    padding-left: 200px;
+    box-sizing: border-box;
+}
+.middle>div{
+    width: 100%;
+    height:auto;
+    overflow: hidden;
+    padding: 2%;
+    box-sizing: border-box;
+    background-color: #eee;
+}
+/*左边头像*/
+.imgbox{
+    width: 	200px;
+    height: 200px;
+    background: url("./img/beatu.png");
+    background-size: contain;
+    text-align: center;
+    overflow: hidden;
+}
+.innertx{
+    width: 60px;
+    height: 60px;
+    background: url(./img/scert_05.png);
+    background-size: cover;
+    margin: 15px auto;
+}
+.imgbox p{
+    font-size: 14px;
+    color: #fff;
+    margin: 6px 0;
+}
+.imgbox p:nth-of-type(4){
+    font-size: 12px;
+}
+
+/*选择ul*/
+.inbox_down{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 300px;
+    background-color: #0E0C19;
+}
+.inbox_down>li{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background-color: #0E0C19;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.inbox_down>li>a{
+    color: #fff;
+    font-size: 16px;
+}
+/*banner*/
+
+@font-face{
+    font-family: "fontss";
+    src: url(./fonts/AkzidenzGrotesk-BoldCondAlt.otf);
+}
+.banner{
+    width: 100%;
+    height: 200px;
+    background-color: #EFD63B;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.banner-span{
+    cursor: pointer;
+    position: absolute;
+    right:100px;
+    bottom:75px;
+    font-size: 16px;
+}
+.banner>div{
+    height: 70px;
+    margin-top: 58px;
+}
+.banner>div>h1:nth-of-type(1){
+    font-size: 26px;
+    float: left;
+    margin-right: 40px;
+    margin-top: 12px;
+}
+.banner>div>h1:nth-of-type(1)>span{
+    font-size: 12px;
+    display: block;
+}
+.renminb{
+    font-size: 26px;
+    float: left;
+}
+.banner>div>h1{
+    height: 65px;
+}
+.renminb>span{
+    font-family: fontss;
+    font-size: 68px;
+}
+.banner>img{
+    width: 126px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.banner>div>img{
+    float: left;
+    width: 60px;
+    margin-right: 40px;
+    margin-top: 14px;
+}
+.banner h1{
+    margin: 0;
+}
+/**/
+.xinchou{
+    width: 100%;
+    margin: 20px 0;
+    height: 40px;
+    padding-left: 22px;
+    box-sizing: border-box;
+}
+.xinchou>span{
+    margin-right: 8px;
+    color: #333;
+
+}
+.xinchou>span:nth-of-type(1) {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    float: left;
+
+}
+.xinchou>img{
+    margin-top: 12px;
+    float: left;
+    margin-right: 10px;
+}
+.xinchou>span:nth-of-type(2){
+    font-size: 12px;
+    margin-top: 18px;
+    font-weight: bold;
+}
+.xinchou_two{
+    background-color: #544B14;
+}
+.xinchou_two>span{
+    color: #fff;
+}
+
+
+.flex_top{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+.ss{
+    width: 24.2%;
+    height: 110px;
+    background-color: #ccc;
+    float: left;
+    margin-right: 1%;
+}
+.ss:nth-of-type(4n){
+    margin-right: 0;
+}
+.ss{
+    transition: all 0.3s;
+    box-sizing: border-box;
+    padding: 20px 20px;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+.ss>div{
+    float: right;
+    margin-top: 18px;
+}
+.ss>span{
+    float: left;
+    margin-top: 21px;
+    font-size: 22px;
+}
+.ss>div>span{
+    font-family: fontss;
+}
+.spanone{
+    font-size: 22px;
+    color: orange;
+    margin-top: 10px;
+}
+.spantwo{
+    font-size: 36px;
+    font-weight: normal;
+}
+.spanthree{
+    margin-top: 20px;
+}
+.flex_down{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+}
+.flex_down>div{
+    width: 24.2%;
+    height: 200px;
+    margin-bottom: 1%;
+    text-align: center;
+    float: left;
+    margin-right: 1%;
+    transition: all 0.3s;
+    cursor: pointer;
+    background-color: #eee;
+}
+.flex_down>div:nth-of-type(4n){
+    margin-right: 0;
+}
+.yuan{
+    width: 100px;
+    height: 100px;
+    border: 6px solid #544B14;
+    border-radius: 50%;
+    border-color: #544B14 #544B14 #544B14 transparent;
+    transform: rotate(45deg);
+    margin: 20px auto 20px;
+}
+.yuant{
+    font-family: fontss;
+    color: #544B14;
+    text-align: center;
+    margin-top: -90px;
+}
+.yuant>span:nth-of-type(1){
+    font-size: 40px;
+    margin: 0 5px 0 15px;
+}
+.yuant>span:nth-of-type(2){
+    font-size: 20px;
+    color: #333;
+}
+.ps{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+
+.hide{
+    width: 1366px;
+    height: 660px;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.inner{
+    width: 370px;
+    height: 226px;
+    background-color: #fff;
+    position: fixed;
+    top: 280px;
+    left: 500px;
+    padding: 30px 76px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.inner h3{
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:10px;
+}
+.sss{
+    width:100%;
+    height: 90px;
+    background-color: #fff;
+    float: left;
+    margin: 0 auto;
+}
+.sss:nth-of-type(4n){
+    margin-right: 0;
+}
+.sss{
+    transition: all 0.3s;
+    box-sizing: border-box;
+    padding: 20px 10px;
+    margin-bottom: 1%;
+    cursor: pointer;
+}
+.sss>div{
+    float: right;
+    margin-top: 5px;
+}
+.sss>span{
+    float: left;
+    margin-top: 12px;
+    font-size: 18px;
+}
+.sss>div>span{
+    font-family: fontss;
+}
+.sss>div>span:nth-of-type(1){
+    font-size: 22px;
+    color: orange;
+    margin-top: 10px;
+}
+.sss>div>span:nth-of-type(2){
+    font-size: 30px;
+    color: orange;
+    font-weight: normal;
+}
+.smalls{
+    font-size: 16px!important;
+}
+.sss>div>span:nth-of-type(3){
+    color: #333;
+    margin-top: 20px;
+}
+.btn{
+    width: 100%;
+    height: 40px;
+}
+.btn>button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.btn>button:nth-of-type(1){
+    float: left;
+    width: 80px;
+    height: 100%;
+    background-color: #ccc;
+    color: #fff;
+}
+.btn>button:nth-of-type(2){
+    float: right;
+    width: 80px;
+    height: 100%;
+    background-color: #EED53A;
+    color: #333;
+}
+.hide h3{
+    margin: 0;
+}

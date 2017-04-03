@@ -1,0 +1,1 @@
+/** * Created by Administrator on 2017/3/20. */import React ,{Component} from 'react';import './teacher.css';export default class Dleft extends Component{    render(){        return(                <div className="d-left-box">                    <span>学生管理</span>                </div>        )    }}
